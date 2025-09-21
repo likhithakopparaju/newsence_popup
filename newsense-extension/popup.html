@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NewsSense — Verified News</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h3>📰 Verified News</h3>
+
+  <!-- Loading message -->
+  <div id="status">Loading headlines…</div>
+
+  <!-- Scrollable news area -->
+  <div id="newsContainer">
+    <p id="newsText"></p>
+    <div id="articles"></div>   <!-- ✅ changed from <ul> to <div> -->
+  </div>
+
+  <!-- Buttons and scan result -->
+  <div id="articleActions">
+    <button id="readBtn">🎤 Read Aloud</button>
+    <button id="scanBtn">🔍 Scan This News</button>
+    <div id="scanResult"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

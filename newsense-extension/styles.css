@@ -1,0 +1,92 @@
+/* General popup body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 12px;
+  background-color: #f5f5f5;
+  color: #333;
+  width: 360px;       /* fixed popup width */
+  min-height: 450px;  /* enough height */
+  box-sizing: border-box;
+}
+
+/* Title */
+h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+/* Status/loading text */
+#status {
+  font-style: italic;
+  color: #666;
+  text-align: center;
+  margin: 8px 0;
+}
+
+/* Scrollable container for news */
+#newsContainer {
+  max-height: 220px;   /* limit box height */
+  overflow-y: auto;    /* enable scroll when content is long */
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+/* Headline and description text */
+#newsText {
+  font-weight: bold;
+  font-size: 15px;
+  margin: 0 0 10px 0;
+  white-space: pre-wrap; /* preserves newlines */
+}
+
+/* Articles list */
+#articles {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+}
+#articles li {
+  padding: 4px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+/* Buttons container */
+#articleActions {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Green buttons */
+#articleActions button {
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #28a745; /* green */
+  color: white;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  transition: all 0.15s ease-in-out;
+}
+
+#articleActions button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+/* Scan result text */
+#scanResult {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  font-weight: bold;
+  color: #444;
+  width: 100%;
+}
